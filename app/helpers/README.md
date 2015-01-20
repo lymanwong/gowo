@@ -15,8 +15,8 @@ Inside this file define your helpers like:
 
 ```
 helpers do
-  def em(text)
-    "<em>#{text}</em>"
+  def gravatar_url(user)
+  
   end
 end
 ```
