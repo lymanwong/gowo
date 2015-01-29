@@ -21,6 +21,8 @@ gem 'oauth'
 gem 'signet'
 gem 'faker'
 
+gem 'rails_12factor', group: :production
+
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'
