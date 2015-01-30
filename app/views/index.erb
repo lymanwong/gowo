@@ -30,7 +30,7 @@
     <h1>Checkout the community's recent workouts!</h1>
     <ul>
       <% @workouts.each do |workout| %>
-      <li><a href="/workouts/<%= workout.id %>"><%= workout.name %><br> Weight: <%= workout.weight %><br>  Sets: <%= workout.set %><br>  Reps: <%= workout.rep %></a>
+      <li><a href="/workouts/<%= workout.id %>"><%= workout.name %><br> Weight: <%= workout.weight %><br>  Sets: <%= workout.set %><br>  Reps: <%= workout.rep %><br> Date: <%= workout.date %></a>
       </li>
       <form action="/workouts/<%= workout.id %>" method="post">
         <input type="hidden" name="_method" value="delete">
