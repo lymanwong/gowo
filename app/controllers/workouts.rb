@@ -1,8 +1,8 @@
 get '/' do
   redirect '/login' unless session[:user_id]
 
-  session[:workout_views] = 0 unless session[:workout_views]
-  session[:workout_views] += 1
+  # session[:workout_views] = 0 unless session[:workout_views]
+  # session[:workout_views] += 1
   @user = User.find(session[:user_id])
   @workouts = Workout.all
   erb :index
@@ -40,4 +40,3 @@ put '/workouts/:id' do
   @workout.update(params[:workout])
   redirect to "/workouts/#{@workout.id}"
 end
-
