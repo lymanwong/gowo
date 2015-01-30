@@ -48,7 +48,7 @@ body {
   left: 0;
   background-size: cover;
   background-position: 50% 50%;
-  background-image: url('//blacktiesandbarbells.com/wp-content/uploads/2014/10/Gym-etiquette.jpg');
+  background-image: url('/gym.jpg');
   background-repeat:repeat;
 }
 .form-signin {
