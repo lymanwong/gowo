@@ -40,4 +40,3 @@ put '/workouts/:id' do
   @workout.update(params[:workout])
   redirect to "/workouts/#{@workout.id}"
 end
-

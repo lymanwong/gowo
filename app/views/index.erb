@@ -9,14 +9,11 @@
       </button>
       <div class="navbar-brand navbar-brand-centered">GoWo</div>
     </div>
-
     <div class="collapse navbar-collapse" id="navbar-brand-centered">
       <ul class="nav navbar-nav">
-
         <li><a href="/">Home</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-
         <li><a href="/logout">Logout</a></li>
       </ul>
     </div>
@@ -25,7 +22,6 @@
 <div id="main">
   <div id="column1">
     <h1>Welcome, <%= @user.username %>!</h1>
-
     <img src=<%= gravatar_url(@user)%>>
     <h1>Checkout the community's recent workouts!</h1>
     <ul>
@@ -47,27 +43,21 @@
       <label for="name">Name:</label>
       <input type="text" name="workout[name]" required />
     </br>
-
     <label for="body_part">Body Part:</label>
     <input type="text" name="workout[body_part]" required />
   </br>
-
   <label for="weight">Weight (lbs):</label>
   <input type="text" name="workout[weight]" required />
 </br>
-
 <label for="set">Sets:</label>
 <input type="text" name="workout[set]" required />
 </br>
-
 <label for="rep">Reps:</label>
 <input type="text" name="workout[rep]" required />
 </br>
-
 <label for="date">Date:</label>
 <input id="datecal" type="date" name="workout[date]" required />
 </br></br>
-
 <input type="submit" value="Add"/>
 </form>
 </div>
