@@ -67,7 +67,7 @@ var __slice = [].slice;
 
     function Starrr($el, options) {
       var i, _, _ref,
-        _this = this;
+      _this = this;
 
       this.options = $.extend({}, this.defaults, options);
       this.$el = $el;

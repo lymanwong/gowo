@@ -1,6 +1,5 @@
 <nav class="navbar navbar-default" role="navigation">
   <div class="container">
-
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
         <span class="sr-only">Toggle navigation</span>
@@ -10,22 +9,19 @@
       </button>
       <div class="navbar-brand navbar-brand-centered">GoWo</div>
     </div>
-
     <div class="collapse navbar-collapse" id="navbar-brand-centered">
       <ul class="nav navbar-nav">
-  <li><a href="/">Home</a></li>
-</ul>
-<ul class="nav navbar-nav navbar-right">
-
-  <li><a href="/logout">Logout</a></li>
-</ul>
-</div><!-- /.navbar-collapse -->
-</div><!-- /.container-fluid -->
+        <li><a href="/">Home</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/logout">Logout</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
 </nav><!-- <div id="container"> -->
 <div id="main">
   <div id="column2">
     <h3>Edit your workout:</h3>
-
     <form action="/workouts/<%= @workout.id %>" method="post">
       <input type="hidden" name="_method" value="put">
       <label for="name">Name:</label>
@@ -35,23 +31,18 @@
     <label for="body_part">Body Part:</label>
     <input type="text" name="workout[body_part]" value="<%= @workout.body_part %>" />
   </br>
-
-  <label for="weight">Weight in pounds:</label>
+  <label for="weight">Weight (lbs):</label>
   <input type="text" name="workout[weight]" value="<%= @workout.weight %>" />
 </br>
-
 <label for="set">Sets:</label>
 <input type="text" name="workout[set]" value="<%= @workout.set %>" />
 </br>
-
 <label for="rep">Reps:</label>
 <input type="text" name="workout[rep]" value="<%= @workout.rep %>" />
 </br>
-
 <label for="date">Date:</label>
 <input type="date" name="workout[date]" value="<%= @workout.date %>" />
 </br>
-
 <input type="submit" value="Update">
 </form>
 </div>
