@@ -16,3 +16,7 @@ get '/logout' do
   session[:user_id] = nil
   redirect '/login'
 end
+
+after do
+  ActiveRecord::Base.connection.close
+end

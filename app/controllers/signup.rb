@@ -11,3 +11,7 @@ post '/signup' do
     erb '/signup'
   end
 end
+
+after do
+  ActiveRecord::Base.connection.close
+end
