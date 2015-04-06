@@ -1,6 +1,6 @@
 User.create(username: "Lyman", email: "lymanwong@gmail.com", password: "123")
 
-10.times do
+30.times do
   User.create(username: Faker::Name.name, email: Faker::Internet.email, password: "boom")
 
   array = [1,2,3]
