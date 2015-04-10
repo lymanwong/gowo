@@ -1,25 +1,36 @@
 /*
-Error: File to import not found or unreadable: bootstrap.
-       Load path: /Users/Lye/Documents/gowo/public/stylesheets/sass
-        on line 4 of ./public/stylesheets/sass/style.scss
+Error: Undefined mixin 'box-shadow'.
+        on line 6 of ./public/stylesheets/sass/style.scss, in `box-shadow'
+        from line 6 of ./public/stylesheets/sass/style.scss
 
 1: $body-bg: #ecf0f1;
 2: $brand-primary: #f39c12;
 3: $jumbotron-bg: #bdc3c7;
-4: @import 'bootstrap';
-5: 
-6: @import 'bootstrap-responsive';
-7: 
-8: .navbar-inner{
-9:     @include box-shadow(none !important);
+4: 
+5: .navbar-inner{
+6:     @include box-shadow(none !important);
+7:     border: 0;
+8: }
 
 Backtrace:
-./public/stylesheets/sass/style.scss:4
-/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/import_node.rb:66:in `rescue in import'
-/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/import_node.rb:45:in `import'
-/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/import_node.rb:37:in `css_import?'
-/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+./public/stylesheets/sass/style.scss:6:in `box-shadow'
+./public/stylesheets/sass/style.scss:6
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/stack.rb:98:in `block in with_mixin'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/stack.rb:98:in `with_mixin'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `map'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
 /Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 /Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
@@ -87,4 +98,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: bootstrap.\A        Load path: /Users/Lye/Documents/gowo/public/stylesheets/sass\A         on line 4 of ./public/stylesheets/sass/style.scss\A \A 1: $body-bg: #ecf0f1;\A 2: $brand-primary: #f39c12;\A 3: $jumbotron-bg: #bdc3c7;\A 4: @import 'bootstrap';\A 5: \A 6: @import 'bootstrap-responsive';\A 7: \A 8: .navbar-inner{\A 9:     @include box-shadow(none !important);"; }
+  content: "Error: Undefined mixin 'box-shadow'.\A         on line 6 of ./public/stylesheets/sass/style.scss, in `box-shadow'\A         from line 6 of ./public/stylesheets/sass/style.scss\A \A 1: $body-bg: #ecf0f1;\A 2: $brand-primary: #f39c12;\A 3: $jumbotron-bg: #bdc3c7;\A 4: \A 5: .navbar-inner{\A 6:     @include box-shadow(none !important);\A 7:     border: 0;\A 8: }"; }
