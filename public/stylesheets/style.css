@@ -1,0 +1,90 @@
+/*
+Error: File to import not found or unreadable: bootstrap.
+       Load path: /Users/Lye/Documents/gowo/public/stylesheets/sass
+        on line 4 of ./public/stylesheets/sass/style.scss
+
+1: $body-bg: #ecf0f1;
+2: $brand-primary: #f39c12;
+3: $jumbotron-bg: #bdc3c7;
+4: @import 'bootstrap';
+5: 
+6: @import 'bootstrap-responsive';
+7: 
+8: .navbar-inner{
+9:     @include box-shadow(none !important);
+
+Backtrace:
+./public/stylesheets/sass/style.scss:4
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/import_node.rb:66:in `rescue in import'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/import_node.rb:45:in `import'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/plugin.rb:54:in `check_for_updates'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.13/lib/sass/plugin/rack.rb:51:in `call'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/rack-1.5.2/lib/rack/logger.rb:15:in `call'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sinatra-1.4.5/lib/sinatra/base.rb:210:in `call'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sinatra-1.4.5/lib/sinatra/show_exceptions.rb:21:in `call'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sinatra-1.4.5/lib/sinatra/base.rb:180:in `call'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sinatra-1.4.5/lib/sinatra/base.rb:2014:in `call'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `block in call'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sinatra-1.4.5/lib/sinatra/base.rb:1788:in `synchronize'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `call'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/sinatra-1.4.5/lib/sinatra/base.rb:217:in `call'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/shotgun-0.9/lib/shotgun/loader.rb:86:in `proceed_as_child'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/shotgun-0.9/lib/shotgun/loader.rb:31:in `call!'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/shotgun-0.9/lib/shotgun/loader.rb:18:in `call'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/shotgun-0.9/lib/shotgun/favicon.rb:12:in `call'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/shotgun-0.9/lib/shotgun/static.rb:14:in `call'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/rack-1.5.2/lib/rack/builder.rb:138:in `call'
+/Users/Lye/.rvm/gems/ruby-2.0.0-p598/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/Users/Lye/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/Users/Lye/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/Users/Lye/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: bootstrap.\A        Load path: /Users/Lye/Documents/gowo/public/stylesheets/sass\A         on line 4 of ./public/stylesheets/sass/style.scss\A \A 1: $body-bg: #ecf0f1;\A 2: $brand-primary: #f39c12;\A 3: $jumbotron-bg: #bdc3c7;\A 4: @import 'bootstrap';\A 5: \A 6: @import 'bootstrap-responsive';\A 7: \A 8: .navbar-inner{\A 9:     @include box-shadow(none !important);"; }

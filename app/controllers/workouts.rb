@@ -12,6 +12,10 @@ get '/workouts/new' do
   erb :new
 end
 
+get '/about' do
+  erb :about
+end
+
 get '/workouts/:id' do
   @user = User.find(session[:user_id])
   @workout = Workout.find(params[:id])
@@ -20,7 +24,6 @@ end
 
 post '/workouts/new' do
   Workout.create(params[:workout])
-  p "hello checking route"
   redirect to '/' , :layout => false
 end
 

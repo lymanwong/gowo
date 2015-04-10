@@ -20,6 +20,10 @@ gem 'google_calendar'
 gem 'oauth'
 gem 'signet'
 gem 'faker'
+gem 'sinatra-twitter-bootstrap', :require => 'sinatra/twitter-bootstrap'
+gem 'sass'
+gem 'will_paginate', '~> 3.0.6'
+
 
 group :test do
   gem 'shoulda-matchers'
