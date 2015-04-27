@@ -18,5 +18,4 @@ a) Login if they have an account<br>
 3) Google connect<br>
 
 ### Bugs:
-1) Bootstrap formatting is broken on Heroku.<br>
-2) Need to fix associations
+1) Add polymorphic associations

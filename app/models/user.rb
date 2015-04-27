@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   has_many :workouts
-  has_many :feedbacks, through: :workouts
+  has_many :comments, through: :workouts
+
   def password
     @password ||= BCrypt::Password.new(encrypted_password)
   end
