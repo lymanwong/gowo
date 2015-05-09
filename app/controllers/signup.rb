@@ -1,3 +1,5 @@
+require 'sinatra'
+
 get '/signup' do
   erb :signup
 end

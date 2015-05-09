@@ -7,9 +7,8 @@ class CreateWorkouts < ActiveRecord::Migration
       t.integer :set
       t.integer :rep
       t.date :date
+      t.references :user, index: true
       t.timestamps
-      t.references :user
-      t.references :comment
     end
   end
 end
