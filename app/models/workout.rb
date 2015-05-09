@@ -1,6 +1,4 @@
 class Workout < ActiveRecord::Base
   belongs_to :user
-  belongs_to :feedback
-
-
+  has_many :comments
 end

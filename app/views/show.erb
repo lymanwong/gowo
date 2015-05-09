@@ -1,14 +1,35 @@
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h2>Comment on this workout</h2>
-    </div>
-      <ul>
-        <li>Name: <%= @workout.name %></li>
-        <li>Body part: <%= @workout.body_part %></li>
-        <li>Weight: <%= @workout.weight %></li>
-        <li>Sets: <%= @workout.set %></li>
-        <li>Reps: <%= @workout.rep %></li>
-        <li>Date: <%= @workout.date %></li>
-      </ul>
-      <a href="/workouts/<%= @workout.id %>/edit">Edit</a>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h2>Comment on this workout</h2>
   </div>
+  <div class="panel-body">
+    <ul>
+      <li>Contributed by: <%= @workout.user.username %></li>
+      <li>Workout name: <%= @workout.name %></li>
+      <li>Body part: <%= @workout.body_part %></li>
+      <li>Weight: <%= @workout.weight %></li>
+      <li>Sets: <%= @workout.set %></li>
+      <li>Reps: <%= @workout.rep %></li>
+      <li>Date: <%= @workout.date %></li>
+    </ul>
+    </div>
+    <div class="panel-footer show_links">
+      <a href="/workouts/<%= @workout.id %>/edit">Edit</a> | <a href="/">Home</a>
+    </div>
+  </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="..." alt="...">
+          <div class="caption">
+            <h3><%= User.find(@workout.comments.first.user_id).username %></h3>
+            <p><%= @workout.comments.first.comment %></p>
+            <!-- <p><a href="#" class="btn btn-primary" role="button">Profile</a> -->
+            <!-- <a href="#" class="btn btn-default" role="button">Button</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%=
+</div>

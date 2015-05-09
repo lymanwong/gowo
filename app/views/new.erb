@@ -1,65 +1,21 @@
-<nav class="navbar navbar-default" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <div class="navbar-brand navbar-brand-centered">GoWo</div>
-    </div>
-    <div class="collapse navbar-collapse" id="navbar-brand-centered">
-      <ul class="nav navbar-nav">
-<<<<<<< HEAD
-  <li><a href="/">Home</a></li>
-</ul>
-<ul class="nav navbar-nav navbar-right">
-  <li><a href="/logout">Logout</a></li>
-</ul>
-</div><!-- /.navbar-collapse -->
-</div><!-- /.container-fluid -->
-=======
-        <li><a href="/">Home</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="/logout">Logout</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
->>>>>>> fix_session_error
-</nav><!-- <div id="container"> -->
-<ul>
-  <% if @errors %>
-  <% @errors.each do |error| %>
-  <li><%= error %></li>
-  <% end %>
-  <% end %>
-</ul>
-<header>
-  <a href="/logout">Logout</a>
-  <h3>Add a new workout</h3>
-</header>
-<div id="newworkout">
+
   <form  action="/workouts/new" method="post">
     <label for="name">Name:</label>
-    <input type="text" name="workout[name]" required />
-  </br>
-  <label for="body_part">Body Part:</label>
-  <input type="text" name="workout[body_part]" required />
-</br>
-<label for="weight">Weight in pounds:</label>
-<input type="text" name="workout[weight]" required />
-</br>
-<label for="set">Sets:</label>
-<input type="text" name="workout[set]" required />
-</br>
-<label for="rep">Reps:</label>
-<input type="text" name="workout[rep]" required />
-</br>
-<label for="date">Date:</label>
-<input id="datecal" type="date" name="workout[date]" required />
-</br></br>
-<input type="submit" value="Add"/>
+    <input type="text" name="workout[name]" required /></br>
+
+    <label for="body_part">Body Part:</label>
+    <input type="text" name="workout[body_part]" required /></br>
+
+    <label for="weight">Weight in pounds:</label>
+    <input type="text" name="workout[weight]" required /></br>
+
+    <label for="set">Sets:</label>
+    <input type="text" name="workout[set]" required /></br>
+
+    <label for="rep">Reps:</label>
+    <input type="text" name="workout[rep]" required /></br>
+
+    <label for="date">Date:</label>
+    <input id="datecal" type="date" name="workout[date]" required /></br></br>
+    <input type="submit" value="Add"/>
 </form>
-</div>

@@ -11,6 +11,9 @@ Error: Undefined mixin 'box-shadow'.
 6:     @include box-shadow(none !important);
 7:     border: 0;
 8: }
+9: 
+10: .container .jumbotron {
+11:   padding-left: 60px;
 
 Backtrace:
 ./public/stylesheets/sass/style.scss:6:in `box-shadow'
@@ -98,4 +101,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'box-shadow'.\A         on line 6 of ./public/stylesheets/sass/style.scss, in `box-shadow'\A         from line 6 of ./public/stylesheets/sass/style.scss\A \A 1: $body-bg: #ecf0f1;\A 2: $brand-primary: #f39c12;\A 3: $jumbotron-bg: #bdc3c7;\A 4: \A 5: .navbar-inner{\A 6:     @include box-shadow(none !important);\A 7:     border: 0;\A 8: }"; }
+  content: "Error: Undefined mixin 'box-shadow'.\A         on line 6 of ./public/stylesheets/sass/style.scss, in `box-shadow'\A         from line 6 of ./public/stylesheets/sass/style.scss\A \A 1: $body-bg: #ecf0f1;\A 2: $brand-primary: #f39c12;\A 3: $jumbotron-bg: #bdc3c7;\A 4: \A 5: .navbar-inner{\A 6:     @include box-shadow(none !important);\A 7:     border: 0;\A 8: }\A 9: \A 10: .container .jumbotron {\A 11:   padding-left: 60px;"; }
