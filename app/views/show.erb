@@ -20,7 +20,7 @@
     <div class="row">
       <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
-          <img src="..." alt="...">
+          <img src="http://www.gravatar.com/avatar/<%= User.find(@workout.comments.first.user_id).email %>" alt="http://pspfitness.com/wp-content/uploads/2014/01/Sports-Dumbbell-icon.png">
           <div class="caption">
             <h3><%= User.find(@workout.comments.first.user_id).username %></h3>
             <p><%= @workout.comments.first.comment %></p>
