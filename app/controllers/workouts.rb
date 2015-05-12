@@ -18,7 +18,7 @@ end
 get '/workouts/:id' do
   @user = User.find(session[:user_id])
   @workout = Workout.find(params[:id])
-  @mycomments = @workout.comments
+  @comments = @workout.comments
   erb :show
 end
 

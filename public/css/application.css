@@ -115,3 +115,8 @@ body{ }
 .show_links{
   text-align: center;
 }
+
+
+.comment_box {
+  display: inline-block;
+}

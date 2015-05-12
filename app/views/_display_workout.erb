@@ -1,0 +1,18 @@
+<div class="col-md-6 col-md-offset-3">
+  <div class="jumbotron">
+    <div class="container">
+      <ul>
+        <li>Contributed by: <%= @workout.user.username %></li>
+        <li>Workout name: <%= @workout.name %></li>
+        <li>Body part: <%= @workout.body_part %></li>
+        <li>Weight: <%= @workout.weight %></li>
+        <li>Sets: <%= @workout.set %></li>
+        <li>Reps: <%= @workout.rep %></li>
+        <li>Date: <%= @workout.date %></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="panel-footer show_links">
+  <a href="/workouts/<%= @workout.id %>/edit">Edit</a> | <a href="/">Home</a>
+</div>
