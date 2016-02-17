@@ -24,7 +24,7 @@ end
 
 post '/workouts/new' do
   Workout.create(params[:workout])
-  redirect to '/' , :layout => false
+  redirect to '/workouts/#{@workout.id}' , :layout => false
 end
 
 delete '/workouts/:id' do

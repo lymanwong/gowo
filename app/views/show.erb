@@ -17,6 +17,7 @@
       <a href="/workouts/<%= @workout.id %>/edit">Edit</a> | <a href="/">Home</a>
     </div>
   </div>
+    <%= erb :_newcomment %>
     <% @comments.each do |c| %>
     <div class="row">
       <div class="col-sm-6 col-md-4">
